@@ -1,0 +1,75 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CALL_MINUTE
+{
+    public class COMPRO_5 
+    {
+      public static void Main(string[] arg)
+      {
+         //Variable Declaration
+           
+            double CM;
+            double TC;
+            CM = 6.50;
+
+            //Input Details
+            Console.Write("Call Minutes: ");
+            CM = double.Parse(Console.ReadLine());
+
+            //Processs
+            TC = CM * 6.50;
+
+            //output
+            Console.WriteLine("Total Charge: " + TC);
+            Console.WriteLine(" ");
+            Console.ReadKey();
+
+
+            //Variable Declaration
+            double HW;
+            double HR;
+            double TP;
+
+            //Input Details
+            Console.Write("Enter Hourly Work: ");
+            HW = double.Parse(Console.ReadLine());
+            Console.Write("Enter Hour Rate: ");
+            HR = double.Parse(Console.ReadLine());
+
+            //Process
+            TP = HW * HR;
+
+            //Output
+            Console.WriteLine("Total Pay: " + TP);
+            Console.WriteLine(" ");
+            Console.ReadKey();
+
+            //Variable Declaration
+            double RS;
+            double LB;
+            double UB;
+            double GA;
+            double TOTALPROCEEDS;
+
+            Console.Write("Enter Number of Ticket Sold in Ringside: ");
+            RS = double.Parse(Console.ReadLine());
+            Console.Write("Enter Number of Ticket Sold in Lower Box: ");
+            LB = double.Parse(Console.ReadLine());
+            Console.Write("Enter Number of Ticket Sold in Upper Box: ");
+            UB = double.Parse(Console.ReadLine());
+            Console.Write("Enter number of Ticket Sold in General Admission: ");
+            GA = double.Parse(Console.ReadLine());
+
+            //Process
+            TOTALPROCEEDS = (RS * 100) + (LB * 50) + (UB * 25) + (GA * 10);
+
+            //Output
+            Console.Write("TOTAL PROCEEDS: " + TOTALPROCEEDS);
+            Console.ReadKey();
+
+      }
+        
+    }
+}
